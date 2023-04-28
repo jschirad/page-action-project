@@ -20,7 +20,7 @@ jobs:
           echo ${{ inputs.name }}
       - name: Show Entity
         run: |
-          echo ${{ inputs.name }}
+          echo ${{ inputs.entity  }}
       - name: Show Env
         run: |
-          echo ${{ inputs.name }}
+          echo ${{ inputs.environment }}
