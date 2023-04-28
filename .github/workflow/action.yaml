@@ -1,0 +1,26 @@
+name: Deploy App
+
+on:
+  create:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: Name App
+      entity:
+        description: Name Entity
+      environment:
+        description: Environment
+
+jobs:
+  deploy-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Name App
+        run: |
+          echo ${{ inputs.name }}
+      - name: Show Entity
+        run: |
+          echo ${{ inputs.name }}
+      - name: Show Env
+        run: |
+          echo ${{ inputs.name }}
