@@ -1,0 +1,78 @@
+/* Define the font family to be used throughout the website */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Set the background color of the website */
+  body {
+    background-color: #f7f7f7;
+  }
+  
+  /* Define the main container for the website */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the headings */
+  h1, h2, h3 {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the paragraphs */
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the buttons */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0077b5;
+    text-decoration: none;
+  }
+  
+  /* Style the input fields */
+  input[type=text] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the form */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
