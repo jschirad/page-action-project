@@ -7,22 +7,23 @@ runButton.addEventListener('click', () => {
   const word1 = word1Input.value;
   const word2 = word2Input.value;
   const word3 = word3Input.value;
-  const workflow = 'example-workflow';
-  const token = 'YOUR_PERSONAL_ACCESS_TOKEN';
+  const workflow = 'action';
+  const token = 'USER_TOKEN';
 
-  fetch(`https://api.github.com/repos/USERNAME/REPO_NAME/actions/workflows/${workflow}.yml/dispatches`, {
+  fetch('https://api.github.com/repos/USER/REPO/actions/workflows/ACTION_NAME.yaml/dispatches', {
     method: 'POST',
     headers: {
       'Authorization': `token ${token}`,
       'Accept': 'application/vnd.github.v3+json',
       'Content-Type': 'application/json'
+      
     },
     body: JSON.stringify({
       ref: 'main',
       inputs: {
-        word1: word1,
-        word2: word2,
-        word3: word3
+        name: word1,
+        entity: word2,
+        environment: word3
       }
     })
   })
